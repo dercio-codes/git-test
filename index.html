@@ -1,9 +1,40 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <style>
+        .LessGo{
+            animation: moving-around 8s both ;
+            width:250px;
+            height:150px;
+            line-height: 150px;
+            text-align: center;
+        }
+        @keyframes moving-around{
+            0%{
+            background: palegreen;
+                transform: translateX(0px) rotateZ(360deg);
+            }
+            20%{
+            background: palevioletred;
+                transform: translateX(350px) ;
+            }
+            40%{
+            background: paleturquoise;
+                transform: translateX(350px) translateY(200px) rotateY(360deg);
+            }
+            60%{
+            background: papayawhip;
+                transform: translateX(0px) translateY(200px);
+            }
+            100%{
+            background: papayawhip;
+                transform: translateY(0px) rotateY(0deg);
+            }
+        }
+    </style>
 </head>
 <body>
     <h1>Less Go.</h1>
-    <h2>Dercio is here.</h2>
+    <h2 class="LessGo">Dercio is here.</h2>
 </body>
 </html>
